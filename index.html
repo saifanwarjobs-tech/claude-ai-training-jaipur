@@ -112,6 +112,16 @@ footer{border-top:1px solid var(--line);padding:28px 0 100px;color:var(--mut);fo
 .bar{display:none}
 @media(max-width:760px){.bar{display:flex;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:40;padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(10,12,30,.92);backdrop-filter:blur(10px);border-top:1px solid var(--line)}.bar a{flex:1;text-align:center;padding:12px;font-size:16px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.hero h1 span b,.hero .lead,.cta,.facts,.arch{transform:none;opacity:1}html{scroll-behavior:auto}}
+.wa{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:50;display:flex;flex-direction:row-reverse;align-items:flex-end;gap:12px}
+.fab{position:relative;display:flex;align-items:center;gap:10px;height:58px;padding:0 22px 0 18px;border-radius:999px;background:#25D366;color:#06260F;font:700 16px var(--d);text-decoration:none;box-shadow:0 12px 32px -8px rgba(37,211,102,.65);transition:transform .2s}
+.fab:hover{transform:translateY(-3px)}
+.fab svg{width:26px;height:26px;flex:none}
+.fab::after{content:"";position:absolute;inset:0;border-radius:inherit;border:2px solid #25D366;animation:rg 2.6s ease-out infinite;pointer-events:none}
+@keyframes rg{from{opacity:.8;transform:scale(1)}to{opacity:0;transform:scale(1.4)}}
+.tip{display:none;position:relative;background:#fff;color:#14172e;border-radius:16px 16px 4px 16px;padding:12px 34px 12px 16px;font:500 15px/1.45 var(--b);max-width:220px;box-shadow:0 18px 40px -12px rgba(0,0,0,.6)}
+.tip.show{display:block}
+.tip button{position:absolute;top:4px;right:6px;width:28px;height:28px;border:0;background:none;color:#555;font-size:20px;line-height:1;cursor:pointer}
+@media(max-width:560px){.fab{width:58px;padding:0;justify-content:center}.fab span{display:none}}
 </style>
 </head>
 <body>
@@ -210,7 +220,6 @@ footer{border-top:1px solid var(--line);padding:28px 0 100px;color:var(--mut);fo
 <footer><div class="w"><div><b>Claude AI Training Jaipur</b> · 58A Udyog Nagar, Jhotwara, Jaipur · <a href="tel:+916350566010">6350566010</a> · <a href="https://maps.app.goo.gl/MphifyVcaZq6B96g8" rel="noopener">Google Maps</a></div>
 <div>Yeh ek independent training academy hai. Anthropic se koi sambandh ya partnership nahi hai. Claude Anthropic ka trademark hai.</div></div></footer>
 
-<div class="bar"><a class="btn" href="https://wa.me/916350566010?text=Demo">WhatsApp</a><a class="btn g" href="tel:+916350566010">Call</a></div>
 
 <script>
 (function(){
@@ -239,6 +248,10 @@ tb.forEach(function(b){b.addEventListener('click',function(){show(+b.dataset.i)}
 var li=document.querySelectorAll('ol.wk li');
 if('IntersectionObserver' in window&&!rm){var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.6});li.forEach(function(x){io.observe(x)})}else li.forEach(function(x){x.classList.add('in')});
 })();
+</script>
+<div class="wa"><a class="fab" href="https://wa.me/916350566010?text=Namaste%2C%20mujhe%20Claude%20AI%20course%20ke%20baare%20mein%20jaanna%20hai" aria-label="WhatsApp par baat karein"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H9.5L5 22v-4H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/></svg><span>WhatsApp</span></a><div class="tip" id="tip" role="status">Demo class ya fees ke baare mein poochna hai? Hum WhatsApp par hain.<button type="button" id="tx" aria-label="Band karein">&times;</button></div></div>
+<script>
+(function(){var t=document.getElementById('tip');setTimeout(function(){t.classList.add('show')},5000);document.getElementById('tx').addEventListener('click',function(){t.classList.remove('show')})})();
 </script>
 </body>
 </html>
