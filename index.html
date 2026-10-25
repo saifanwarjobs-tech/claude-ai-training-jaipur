@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Claude AI Training Jaipur | AI sikhein Hindi-English mein</title>
+<meta name="description" content="Jaipur mein Claude AI ki hands-on training. Students, job karne wale aur business owners ke liye. Free demo class.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Hind:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F7F5FB;--surface:#FFFFFF;--ink:#161A3C;--muted:#555A7A;--line:#E1DDEE;
+  --rose:#D63A6C;--rose-ink:#FFFFFF;--gold:#F0B24A;--deep:#161A3C;--deep-ink:#F7F5FB;
+  --display:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;
+  --body:"Hind","Segoe UI",system-ui,sans-serif;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0F1230;--surface:#191D45;--ink:#F3F1FA;--muted:#A8ABCB;--line:#2C3170;
+  --rose:#F0608F;--rose-ink:#190A12;--deep:#080A20;--deep-ink:#F3F1FA;}}
+:root[data-theme="dark"]{--bg:#0F1230;--surface:#191D45;--ink:#F3F1FA;--muted:#A8ABCB;--line:#2C3170;--rose:#F0608F;--rose-ink:#190A12;--deep:#080A20;--deep-ink:#F3F1FA}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 18px/1.65 var(--body);-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--display);line-height:1.1;margin:0;letter-spacing:-.02em}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+section{padding:84px 0}
+h2{font-size:clamp(30px,5vw,46px);max-width:18ch;font-weight:800}
+.lead{color:var(--muted);max-width:56ch;margin-top:14px}
+
+/* header */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font:800 18px var(--display);text-decoration:none;letter-spacing:-.01em}
+.brand span{color:var(--rose)}
+nav{display:flex;gap:22px;align-items:center;font-size:16px}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+@media(max-width:720px){nav a.hide{display:none}}
+
+.btn{display:inline-block;background:var(--rose);color:var(--rose-ink);font:700 17px var(--display);padding:14px 26px;border-radius:999px;text-decoration:none;border:0;cursor:pointer;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+
+/* hero */
+.hero{padding:64px 0 90px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(40px,7vw,72px);font-weight:800}
+.hero p.lead{font-size:20px}
+.cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.proof{display:flex;gap:26px;flex-wrap:wrap;margin-top:34px;color:var(--muted);font-size:16px}
+.proof b{color:var(--ink);font-family:var(--display)}
+.arch{background:var(--deep);color:var(--deep-ink);border-radius:999px 999px 24px 24px;padding:64px 26px 28px;border:6px solid var(--gold);min-height:380px;box-shadow:0 0 0 6px var(--rose)}
+.msg{border-radius:16px;padding:12px 16px;font-size:16px;line-height:1.5;margin-bottom:12px;max-width:92%}
+.msg.you{background:var(--rose);color:var(--rose-ink);margin-left:auto;border-bottom-right-radius:4px}
+.msg.ai{background:rgba(255,255,255,.1);border-bottom-left-radius:4px}
+.msg.ai small{display:block;opacity:.65;margin-bottom:4px;font-size:13px}
+.caret::after{content:"";display:inline-block;width:2px;height:1em;background:currentColor;margin-left:2px;vertical-align:-2px;animation:b 1s steps(1) infinite}
+@keyframes b{50%{opacity:0}}
+@media(max-width:860px){.hero .wrap{grid-template-columns:1fr}.arch{max-width:420px}}
+
+/* tracks */
+.tracks{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+.track{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:26px}
+.track:nth-child(2){border-radius:100px 100px 20px 20px;padding-top:46px}
+.track h3{font-size:22px;margin-bottom:8px}
+.track p{color:var(--muted);font-size:16px}
+@media(max-width:820px){.tracks{grid-template-columns:1fr}.track:nth-child(2){border-radius:20px;padding-top:26px}}
+
+/* syllabus */
+.syl{background:var(--deep);color:var(--deep-ink)}
+.syl .lead{color:rgba(255,255,255,.7)}
+ol.weeks{list-style:none;margin:40px 0 0;padding:0;display:grid;gap:0;border-left:3px solid var(--rose)}
+ol.weeks li{display:grid;grid-template-columns:110px 1fr;gap:18px;padding:18px 0 18px 24px;position:relative}
+ol.weeks li::before{content:"";position:absolute;left:-10px;top:26px;width:17px;height:17px;border-radius:50%;background:var(--gold)}
+ol.weeks b{font:700 18px var(--display);color:var(--gold)}
+ol.weeks span{color:rgba(255,255,255,.78);font-size:16.5px}
+@media(max-width:560px){ol.weeks li{grid-template-columns:1fr;gap:2px}}
+
+/* fees */
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+.plan{border:1px solid var(--line);background:var(--surface);border-radius:20px;padding:26px;display:flex;flex-direction:column;gap:10px}
+.plan.hot{border:3px solid var(--rose)}
+.plan h3{font-size:22px}
+.plan ul{margin:6px 0 10px;padding-left:20px;color:var(--muted);font-size:16px}
+.plan .btn{margin-top:auto;text-align:center}
+.price{font:800 26px var(--display)}
+@media(max-width:820px){.plans{grid-template-columns:1fr}}
+
+/* faq */
+details{border-bottom:1px solid var(--line);padding:18px 0}
+summary{font:700 19px var(--display);cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--rose);font-size:24px;line-height:1}
+details[open] summary::after{content:"\2212"}
+details p{color:var(--muted);margin-top:10px;max-width:62ch}
+.faq{max-width:760px;margin-top:30px}
+
+/* final */
+.final{text-align:center}
+.final h2{margin:0 auto}
+.final .cta{justify-content:center}
+footer{border-top:1px solid var(--line);padding:30px 0 40px;color:var(--muted);font-size:14.5px}
+footer .wrap{display:grid;gap:8px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top">Claude AI Training <span>Jaipur</span></a>
+    <nav>
+      <a class="hide" href="#tracks">Kiske liye</a>
+      <a class="hide" href="#syllabus">Syllabus</a>
+      <a class="hide" href="#fees">Fees</a>
+      <a class="btn" style="padding:9px 18px;font-size:15px;color:var(--rose-ink)" href="#demo">Free demo</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Claude AI ko apna asistant banana sikhein</h1>
+      <p class="lead">Jaipur mein hands-on training, simple Hindi-English mein. Padhai, job aur business ka roz ka kaam AI se tezi se karna seekhein. Coding ki zaroorat nahi.</p>
+      <div class="cta">
+        <a class="btn" href="#demo">Free demo class book karein</a>
+        <a class="btn ghost" href="#syllabus">Syllabus dekhein</a>
+      </div>
+      <div class="proof">
+        <span><b>6 hafte</b> ka course</span>
+        <span><b>Chhote batch</b>, personal dhyan</span>
+        <span><b>Real project</b> har student ka</span>
+      </div>
+    </div>
+    <div class="arch" aria-label="Claude se baat-cheet ka namuna">
+      <div class="msg you" id="q"></div>
+      <div class="msg ai" id="a" hidden><small>Claude</small><span id="at"></span></div>
+    </div>
+  </div>
+</section>
+
+<section id="tracks">
+  <div class="wrap">
+    <h2>Aap kaun hain? Course aapke hisaab se.</h2>
+    <p class="lead">Basics sabke liye ek hain. Hafta 3 ke baad aapka track alag ho jata hai.</p>
+    <div class="tracks">
+      <div class="track"><h3>Students</h3><p>Notes, summary, doubt solving, resume aur interview prep. Padhai ka time bachayein, samajh badhayein.</p></div>
+      <div class="track"><h3>Job karne wale</h3><p>Email, report, Excel aur presentation ka kaam aadhe time mein. Office mein sabse tez banein.</p></div>
+      <div class="track"><h3>Business owners</h3><p>Social media content, customer replies, product descriptions aur apna khud ka AI assistant.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="syl" id="syllabus">
+  <div class="wrap">
+    <h2>6 hafte mein zero se real project tak</h2>
+    <p class="lead">Har hafte ek cheez seekhein, usi hafte use karke dekhein.</p>
+    <ol class="weeks">
+      <li><b>Hafta 1</b><span>AI aur Claude ki buniyaad, account setup, achha prompt likhna (Hindi aur English), AI ki limits.</span></li>
+      <li><b>Hafta 2</b><span>Padhai aur research: notes, summary, PDF se sawal poochna, resume aur interview prep.</span></li>
+      <li><b>Hafta 3</b><span>Roz ka kaam automate karna: email, reports, Excel help, documents aur presentation.</span></li>
+      <li><b>Hafta 4</b><span>Business use: content calendar, customer replies, Projects mein apna AI assistant.</span></li>
+      <li><b>Hafta 5</b><span>Artifacts se chhote tools aur calculators banana, Claude Code ka intro.</span></li>
+      <li><b>Hafta 6</b><span>Final project present karein aur academy ka certificate paayein.</span></li>
+    </ol>
+  </div>
+</section>
+
+<section id="fees">
+  <div class="wrap">
+    <h2>Fees aur batch</h2>
+    <p class="lead">Sahi fees aur nayi batch ki date ke liye WhatsApp par poochein. Pehle demo class free hai.</p>
+    <div class="plans">
+      <div class="plan"><h3>Student batch</h3><div class="price">₹ ____</div><ul><li>6 hafte, weekend ya shaam</li><li>Notes aur practice tasks</li><li>Certificate</li></ul><a class="btn ghost" href="#demo">Fees poochein</a></div>
+      <div class="plan hot"><h3>Professional batch</h3><div class="price">₹ ____</div><ul><li>6 hafte, office ke baad</li><li>Email, Excel, reports par focus</li><li>Certificate</li></ul><a class="btn" href="#demo">Fees poochein</a></div>
+      <div class="plan"><h3>Business batch</h3><div class="price">₹ ____</div><ul><li>Apne business ka AI setup</li><li>Content aur customer replies</li><li>Staff workshop ka option</li></ul><a class="btn ghost" href="#demo">Fees poochein</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="padding-top:0">
+  <div class="wrap">
+    <h2>Aksar poochhe jaane wale sawal</h2>
+    <div class="faq">
+      <details><summary>Kya coding aani zaroori hai?</summary><p>Nahi. Course bilkul beginners ke liye hai. Aapko bas computer ya phone chalana aana chahiye.</p></details>
+      <details><summary>Classes kis bhasha mein hoti hain?</summary><p>Hindi aur English mix mein, jaise hum roz baat karte hain. Prompts aap Hindi mein bhi likhna seekhenge.</p></details>
+      <details><summary>Classes offline hain ya online?</summary><p>Jaipur mein offline batch aur online batch dono ke baare mein WhatsApp par poochein.</p></details>
+      <details><summary>Kya Claude free hai?</summary><p>Claude ka free plan hai, jisse aap course shuru kar sakte hain. Zyada use ke liye paid plan alag se Anthropic ki taraf se hota hai, uski fees course mein shamil nahi hai.</p></details>
+      <details><summary>Kya yeh Anthropic ka official course hai?</summary><p>Nahi. Yeh ek independent training academy hai. Claude Anthropic ka product hai.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="final" id="demo" style="background:var(--surface);border-top:1px solid var(--line)">
+  <div class="wrap">
+    <h2>Pehli class free. Aaj hi seat pakki karein.</h2>
+    <p class="lead" style="margin:14px auto 0">WhatsApp par “Demo” likhkar bhejein. Hum batch ka time aur jagah bata denge.</p>
+    <div class="cta">
+      <a class="btn" href="https://wa.me/91XXXXXXXXXX?text=Demo">WhatsApp par demo book karein</a>
+      <a class="btn ghost" href="tel:+91XXXXXXXXXX">Call karein</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><b>Claude AI Training Jaipur</b> · Jaipur, Rajasthan · [Aapka address]</div>
+    <div>Yeh ek independent training academy hai. Anthropic se koi sambandh ya partnership nahi hai. Claude Anthropic ka trademark hai.</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var q=document.getElementById('q'),a=document.getElementById('a'),at=document.getElementById('at');
+  var qt="Mere 12th ke result ke baad kaunse 3 career options dekhne chahiye? Hindi mein batao.";
+  var atx="Aap apne interest ke hisaab se in 3 raaston ko dekh sakte hain: 1) Commerce ke saath CA ya BBA, 2) Computer science ya data field, 3) Design ya media. Batayein aapko kya pasand hai, main aage guide karunga.";
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches){q.textContent=qt;a.hidden=false;at.textContent=atx;return;}
+  function type(el,t,sp,done){var i=0;el.classList.add('caret');(function s(){el.firstChild&&0;el.textContent=t.slice(0,i++);if(i<=t.length){setTimeout(s,sp)}else{el.classList.remove('caret');done&&setTimeout(done,350)}})()}
+  type(q,qt,32,function(){a.hidden=false;type(at,atx,18)});
+})();
+</script>
+</body>
+</html>
