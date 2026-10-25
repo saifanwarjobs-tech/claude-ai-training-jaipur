@@ -3,227 +3,241 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Claude AI Training Jaipur | AI sikhein Hindi-English mein</title>
-<meta name="description" content="Jaipur mein Claude AI ki hands-on training. Students, job karne wale aur business owners ke liye. Free demo class.">
+<meta name="color-scheme" content="dark">
+<title>Claude AI Training in Jaipur (Jhotwara) | AI Course, Prompt Engineering, AI for Business</title>
+<meta name="description" content="Claude AI Training in Jaipur (Jhotwara): 6 hafte ka hands-on AI course sirf ₹9,999. Prompt engineering, AI for business, content, resume aur automation. Free demo class.">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"EducationalOrganization","name":"Claude AI Training Jaipur","description":"Hands-on AI training in Jaipur for students, professionals and business owners.","telephone":"+91-6350566010","address":{"@type":"PostalAddress","streetAddress":"58A Udyog Nagar, Jhotwara","addressLocality":"Jaipur","addressRegion":"Rajasthan","addressCountry":"IN"},"hasMap":"https://maps.app.goo.gl/MphifyVcaZq6B96g8","areaServed":"Jaipur","hasOfferCatalog":{"@type":"OfferCatalog","name":"AI training courses","itemListElement":[{"@type":"Offer","price":"9999","priceCurrency":"INR","itemOffered":{"@type":"Course","name":"Complete AI Course (6 weeks)"}},{"@type":"Offer","itemOffered":{"@type":"Course","name":"Claude AI Training"}},{"@type":"Offer","itemOffered":{"@type":"Course","name":"Prompt Engineering Training"}},{"@type":"Offer","itemOffered":{"@type":"Course","name":"AI for Business"}},{"@type":"Offer","itemOffered":{"@type":"Course","name":"AI Content Creation"}},{"@type":"Offer","itemOffered":{"@type":"Course","name":"AI Automation Training"}}]}}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Hind:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{
-  --bg:#F7F5FB;--surface:#FFFFFF;--ink:#161A3C;--muted:#555A7A;--line:#E1DDEE;
-  --rose:#D63A6C;--rose-ink:#FFFFFF;--gold:#F0B24A;--deep:#161A3C;--deep-ink:#F7F5FB;
-  --display:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;
-  --body:"Hind","Segoe UI",system-ui,sans-serif;
-  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
-}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --bg:#0F1230;--surface:#191D45;--ink:#F3F1FA;--muted:#A8ABCB;--line:#2C3170;
-  --rose:#F0608F;--rose-ink:#190A12;--deep:#080A20;--deep-ink:#F3F1FA;}}
-:root[data-theme="dark"]{--bg:#0F1230;--surface:#191D45;--ink:#F3F1FA;--muted:#A8ABCB;--line:#2C3170;--rose:#F0608F;--rose-ink:#190A12;--deep:#080A20;--deep-ink:#F3F1FA}
-html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+:root{--bg:#0A0C1E;--bg2:#12163A;--ink:#F4F2FB;--mut:#A9ADCF;--line:rgba(255,255,255,.13);--rose:#FF4F8B;--gold:#F5B94A;--dk:#1A0710;
+--d:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;--b:"Hind","Segoe UI",system-ui,sans-serif;
+color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:80px;height:100%}
 *,*::before,*::after{box-sizing:inherit}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 18px/1.65 var(--body);-webkit-font-smoothing:antialiased}
-h1,h2,h3{font-family:var(--display);line-height:1.1;margin:0;letter-spacing:-.02em}
-p{margin:0}
-a{color:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 18px/1.65 var(--b);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3{font-family:var(--d);margin:0;line-height:1.05;letter-spacing:-.025em}
+p{margin:0}a{color:inherit}
 :focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
-.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
-section{padding:84px 0}
-h2{font-size:clamp(30px,5vw,46px);max-width:18ch;font-weight:800}
-.lead{color:var(--muted);max-width:56ch;margin-top:14px}
+.w{max-width:1100px;margin:0 auto;padding:0 22px}
+section{padding:96px 0;position:relative}
+h2{font-size:clamp(32px,5.4vw,56px);font-weight:800;max-width:17ch}
+.lead{color:var(--mut);max-width:56ch;margin-top:16px}
+.btn{display:inline-block;background:var(--rose);color:var(--dk);font:700 17px var(--d);padding:15px 28px;border-radius:999px;text-decoration:none;transition:transform .2s,box-shadow .2s;box-shadow:0 8px 30px -8px var(--rose)}
+.btn:hover{transform:translateY(-3px);box-shadow:0 14px 36px -8px var(--rose)}
+.btn.g{background:transparent;color:var(--ink);border:2px solid var(--line);box-shadow:none}
+.btn.g:hover{border-color:var(--gold)}
 
-/* header */
-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
-.brand{font:800 18px var(--display);text-decoration:none;letter-spacing:-.01em}
-.brand span{color:var(--rose)}
-nav{display:flex;gap:22px;align-items:center;font-size:16px}
-nav a{text-decoration:none;color:var(--muted)}
-nav a:hover{color:var(--ink)}
-@media(max-width:720px){nav a.hide{display:none}}
-
-.btn{display:inline-block;background:var(--rose);color:var(--rose-ink);font:700 17px var(--display);padding:14px 26px;border-radius:999px;text-decoration:none;border:0;cursor:pointer;transition:transform .15s}
-.btn:hover{transform:translateY(-2px)}
-.btn.ghost{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+header{position:fixed;top:0;left:0;right:0;z-index:30;padding-top:env(safe-area-inset-top,0px);background:linear-gradient(var(--bg),rgba(10,12,30,.0))}
+header .w{display:flex;justify-content:space-between;align-items:center;height:68px}
+.brand{font:800 18px var(--d);text-decoration:none}.brand i{font-style:normal;color:var(--rose)}
+nav{display:flex;gap:24px;align-items:center;font-size:16px}nav a{text-decoration:none;color:var(--mut)}nav a:hover{color:var(--ink)}
+nav .btn{padding:9px 20px;font-size:15px;color:var(--dk)}
+@media(max-width:760px){nav a:not(.btn){display:none}}
 
 /* hero */
-.hero{padding:64px 0 90px}
-.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
-.hero h1{font-size:clamp(40px,7vw,72px);font-weight:800}
-.hero p.lead{font-size:20px}
-.cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
-.proof{display:flex;gap:26px;flex-wrap:wrap;margin-top:34px;color:var(--muted);font-size:16px}
-.proof b{color:var(--ink);font-family:var(--display)}
-.arch{background:var(--deep);color:var(--deep-ink);border-radius:999px 999px 24px 24px;padding:64px 26px 28px;border:6px solid var(--gold);min-height:380px;box-shadow:0 0 0 6px var(--rose)}
-.msg{border-radius:16px;padding:12px 16px;font-size:16px;line-height:1.5;margin-bottom:12px;max-width:92%}
-.msg.you{background:var(--rose);color:var(--rose-ink);margin-left:auto;border-bottom-right-radius:4px}
-.msg.ai{background:rgba(255,255,255,.1);border-bottom-left-radius:4px}
-.msg.ai small{display:block;opacity:.65;margin-bottom:4px;font-size:13px}
-.caret::after{content:"";display:inline-block;width:2px;height:1em;background:currentColor;margin-left:2px;vertical-align:-2px;animation:b 1s steps(1) infinite}
-@keyframes b{50%{opacity:0}}
-@media(max-width:860px){.hero .wrap{grid-template-columns:1fr}.arch{max-width:420px}}
+.hero{min-height:100svh;display:flex;align-items:center;padding:120px 0 70px;overflow:hidden}
+.glow{position:absolute;border-radius:50%;filter:blur(90px);opacity:.5;pointer-events:none;animation:fl 14s ease-in-out infinite alternate}
+.glow.a{width:520px;height:520px;background:var(--rose);top:-120px;left:-140px}
+.glow.b{width:460px;height:460px;background:#5B3FE0;right:-120px;bottom:-100px;animation-delay:-6s}
+@keyframes fl{to{transform:translate(60px,40px) scale(1.15)}}
+.hero .w{display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center;position:relative;z-index:2}
+.hero h1{font-size:clamp(46px,8.4vw,104px);font-weight:800}
+.hero h1 span{display:block;overflow:hidden}
+.hero h1 span b{display:block;font-weight:inherit;transform:translateY(105%);animation:up .9s cubic-bezier(.2,.8,.2,1) forwards}
+.hero h1 span:nth-child(2) b{animation-delay:.15s;color:var(--gold)}
+.hero h1 span:nth-child(3) b{animation-delay:.3s}
+@keyframes up{to{transform:none}}
+.hero .lead{font-size:20px;opacity:0;animation:fi .8s .7s forwards}
+.cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px;opacity:0;animation:fi .8s .9s forwards}
+@keyframes fi{to{opacity:1}}
+.arch{border-radius:999px 999px 28px 28px;padding:70px 24px 26px;min-height:420px;border:2px solid var(--gold);background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.02));backdrop-filter:blur(6px);box-shadow:0 0 0 10px rgba(255,79,139,.12),0 40px 90px -30px #000;opacity:0;animation:fi 1s .5s forwards}
+.tag{font:600 14px var(--b);color:var(--gold);text-align:center;margin:-34px 0 20px}
+.m{border-radius:16px;padding:12px 16px;font-size:16px;line-height:1.5;margin-bottom:12px;max-width:92%}
+.m.u{background:var(--rose);color:var(--dk);margin-left:auto;border-bottom-right-radius:4px}
+.m.c{background:rgba(255,255,255,.1);border-bottom-left-radius:4px}.m.c small{display:block;opacity:.6;font-size:13px;margin-bottom:3px}
+.cur::after{content:"";display:inline-block;width:2px;height:1em;background:currentColor;margin-left:2px;vertical-align:-2px;animation:bl 1s steps(1) infinite}
+@keyframes bl{50%{opacity:0}}
+.facts{display:flex;gap:28px;flex-wrap:wrap;margin-top:36px;color:var(--mut);font-size:16px;opacity:0;animation:fi .8s 1.1s forwards}.facts b{color:var(--ink);font-family:var(--d)}
+@media(max-width:900px){.hero .w{grid-template-columns:1fr}.arch{max-width:440px}}
+
+/* marquee */
+.mq{border-block:1px solid var(--line);overflow:hidden;padding:18px 0;background:var(--bg2)}
+.mq div{display:flex;gap:46px;width:max-content;animation:mq 38s linear infinite;font:700 20px var(--d);color:var(--mut)}
+.mq span::before{content:"\2726";color:var(--rose);margin-right:46px}
+@keyframes mq{to{transform:translateX(-50%)}}
 
 /* tracks */
-.tracks{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
-.track{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:26px}
-.track:nth-child(2){border-radius:100px 100px 20px 20px;padding-top:46px}
-.track h3{font-size:22px;margin-bottom:8px}
-.track p{color:var(--muted);font-size:16px}
-@media(max-width:820px){.tracks{grid-template-columns:1fr}.track:nth-child(2){border-radius:20px;padding-top:26px}}
+.tabs{display:flex;gap:10px;flex-wrap:wrap;margin-top:34px}
+.tabs button{font:700 16px var(--d);color:var(--ink);background:transparent;border:2px solid var(--line);border-radius:999px;padding:11px 22px;cursor:pointer}
+.tabs button[aria-selected=true]{background:var(--gold);color:var(--dk);border-color:var(--gold)}
+.panel{margin-top:26px;border:1px solid var(--line);border-radius:26px;padding:34px;background:linear-gradient(135deg,var(--bg2),transparent);display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.panel h3{font-size:30px;margin-bottom:10px}.panel p{color:var(--mut)}
+.panel ul{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.panel li{padding:12px 16px;border-left:3px solid var(--rose);background:rgba(255,255,255,.05);border-radius:0 12px 12px 0;font-size:16.5px}
+@media(max-width:760px){.panel{grid-template-columns:1fr;padding:24px}}
 
 /* syllabus */
-.syl{background:var(--deep);color:var(--deep-ink)}
-.syl .lead{color:rgba(255,255,255,.7)}
-ol.weeks{list-style:none;margin:40px 0 0;padding:0;display:grid;gap:0;border-left:3px solid var(--rose)}
-ol.weeks li{display:grid;grid-template-columns:110px 1fr;gap:18px;padding:18px 0 18px 24px;position:relative}
-ol.weeks li::before{content:"";position:absolute;left:-10px;top:26px;width:17px;height:17px;border-radius:50%;background:var(--gold)}
-ol.weeks b{font:700 18px var(--display);color:var(--gold)}
-ol.weeks span{color:rgba(255,255,255,.78);font-size:16.5px}
-@media(max-width:560px){ol.weeks li{grid-template-columns:1fr;gap:2px}}
+.sy{background:var(--bg2)}
+ol.wk{list-style:none;margin:44px 0 0;padding:0 0 0 30px;border-left:2px solid var(--line)}
+ol.wk li{position:relative;padding:20px 0;display:grid;grid-template-columns:120px 1fr;gap:18px}
+ol.wk li::before{content:"";position:absolute;left:-39px;top:30px;width:16px;height:16px;border-radius:50%;background:var(--bg2);border:2px solid var(--line);transition:.5s}
+ol.wk li.in::before{background:var(--gold);border-color:var(--gold);box-shadow:0 0 0 7px rgba(245,185,74,.18)}
+ol.wk b{font:700 19px var(--d);color:var(--gold)}ol.wk span{color:var(--mut)}
+@media(max-width:560px){ol.wk li{grid-template-columns:1fr;gap:2px}}
+
+/* services */
+.sv{display:grid;grid-template-columns:repeat(2,1fr);gap:0 50px;margin-top:40px}
+.sv div{border-top:1px solid var(--line);padding:18px 0}.sv h3{font-size:21px;margin-bottom:4px}.sv p{color:var(--mut);font-size:16px}
+@media(max-width:700px){.sv{grid-template-columns:1fr}}
 
 /* fees */
-.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
-.plan{border:1px solid var(--line);background:var(--surface);border-radius:20px;padding:26px;display:flex;flex-direction:column;gap:10px}
-.plan.hot{border:3px solid var(--rose)}
-.plan h3{font-size:22px}
-.plan ul{margin:6px 0 10px;padding-left:20px;color:var(--muted);font-size:16px}
-.plan .btn{margin-top:auto;text-align:center}
-.price{font:800 26px var(--display)}
-@media(max-width:820px){.plans{grid-template-columns:1fr}}
+.fee{margin-top:40px;max-width:600px;border-radius:28px;padding:38px;background:linear-gradient(160deg,rgba(255,79,139,.22),rgba(91,63,224,.18));border:2px solid var(--rose)}
+.fee .p{font:800 64px var(--d);line-height:1}.fee .p small{font:500 17px var(--b);color:var(--mut);margin-left:8px}
+.fee ul{margin:22px 0 28px;padding:0;list-style:none;display:grid;gap:9px}.fee li::before{content:"\2713";color:var(--gold);margin-right:10px;font-weight:700}
 
-/* faq */
-details{border-bottom:1px solid var(--line);padding:18px 0}
-summary{font:700 19px var(--display);cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px}
-summary::-webkit-details-marker{display:none}
-summary::after{content:"+";color:var(--rose);font-size:24px;line-height:1}
-details[open] summary::after{content:"\2212"}
-details p{color:var(--muted);margin-top:10px;max-width:62ch}
-.faq{max-width:760px;margin-top:30px}
+details{border-bottom:1px solid var(--line);padding:20px 0}
+summary{font:700 20px var(--d);cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}summary::after{content:"+";color:var(--rose);font-size:26px;line-height:1}
+details[open] summary::after{content:"\2212"}details p{color:var(--mut);margin-top:10px;max-width:62ch}
+.faq{max-width:780px;margin-top:30px}
 
-/* final */
-.final{text-align:center}
-.final h2{margin:0 auto}
-.final .cta{justify-content:center}
-footer{border-top:1px solid var(--line);padding:30px 0 40px;color:var(--muted);font-size:14.5px}
-footer .wrap{display:grid;gap:8px}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+/* last look */
+.end{text-align:center;padding:130px 0;overflow:hidden;background:radial-gradient(ellipse at 50% 120%,rgba(255,79,139,.4),transparent 60%)}
+.end h2{margin:0 auto;font-size:clamp(38px,7vw,80px);max-width:14ch}.end .lead{margin:18px auto 0}
+.end .cta{justify-content:center;opacity:1;animation:none}
+.addr{margin-top:34px;color:var(--mut);font-size:16px}.addr b{color:var(--ink)}
+footer{border-top:1px solid var(--line);padding:28px 0 100px;color:var(--mut);font-size:14.5px}footer .w{display:grid;gap:8px}
+.bar{display:none}
+@media(max-width:760px){.bar{display:flex;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:40;padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(10,12,30,.92);backdrop-filter:blur(10px);border-top:1px solid var(--line)}.bar a{flex:1;text-align:center;padding:12px;font-size:16px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.hero h1 span b,.hero .lead,.cta,.facts,.arch{transform:none;opacity:1}html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
-<header>
-  <div class="wrap">
-    <a class="brand" href="#top">Claude AI Training <span>Jaipur</span></a>
-    <nav>
-      <a class="hide" href="#tracks">Kiske liye</a>
-      <a class="hide" href="#syllabus">Syllabus</a>
-      <a class="hide" href="#fees">Fees</a>
-      <a class="btn" style="padding:9px 18px;font-size:15px;color:var(--rose-ink)" href="#demo">Free demo</a>
-    </nav>
-  </div>
-</header>
+<header><div class="w"><a class="brand" href="#top">Claude AI Training <i>Jaipur</i></a>
+<nav><a href="#tracks">Kiske liye</a><a href="#syllabus">Syllabus</a><a href="#fees">Fees</a><a class="btn" href="#demo">Free demo</a></nav></div></header>
 
 <main id="top">
 <section class="hero">
-  <div class="wrap">
+  <div class="glow a"></div><div class="glow b"></div>
+  <div class="w">
     <div>
-      <h1>Claude AI ko apna asistant banana sikhein</h1>
-      <p class="lead">Jaipur mein hands-on training, simple Hindi-English mein. Padhai, job aur business ka roz ka kaam AI se tezi se karna seekhein. Coding ki zaroorat nahi.</p>
-      <div class="cta">
-        <a class="btn" href="#demo">Free demo class book karein</a>
-        <a class="btn ghost" href="#syllabus">Syllabus dekhein</a>
-      </div>
-      <div class="proof">
-        <span><b>6 hafte</b> ka course</span>
-        <span><b>Chhote batch</b>, personal dhyan</span>
-        <span><b>Real project</b> har student ka</span>
-      </div>
+      <h1><span><b>Claude AI</b></span><span><b>Training in</b></span><span><b>Jaipur</b></span></h1>
+      <p class="lead" style="margin-top:26px">Jhotwara, Jaipur mein AI ko apna asistant banana sikhein. Padhai, job aur business ka roz ka kaam tezi se karein, simple Hindi-English mein. Coding ki zaroorat nahi.</p>
+      <div class="cta"><a class="btn" href="#demo">Free demo class book karein</a><a class="btn g" href="#syllabus">Syllabus dekhein</a></div>
+      <div class="facts"><span><b>6 hafte</b>, sirf ₹9,999</span><span><b>Chhota batch</b></span><span><b>Real project</b> aur certificate</span></div>
     </div>
     <div class="arch" aria-label="Claude se baat-cheet ka namuna">
-      <div class="msg you" id="q"></div>
-      <div class="msg ai" id="a" hidden><small>Claude</small><span id="at"></span></div>
+      <div class="tag" id="tg"></div>
+      <div class="m u" id="q"></div>
+      <div class="m c" id="a" hidden><small>Claude</small><span id="at"></span></div>
     </div>
   </div>
 </section>
 
-<section id="tracks">
-  <div class="wrap">
-    <h2>Aap kaun hain? Course aapke hisaab se.</h2>
-    <p class="lead">Basics sabke liye ek hain. Hafta 3 ke baad aapka track alag ho jata hai.</p>
-    <div class="tracks">
-      <div class="track"><h3>Students</h3><p>Notes, summary, doubt solving, resume aur interview prep. Padhai ka time bachayein, samajh badhayein.</p></div>
-      <div class="track"><h3>Job karne wale</h3><p>Email, report, Excel aur presentation ka kaam aadhe time mein. Office mein sabse tez banein.</p></div>
-      <div class="track"><h3>Business owners</h3><p>Social media content, customer replies, product descriptions aur apna khud ka AI assistant.</p></div>
-    </div>
-  </div>
-</section>
+<div class="mq" aria-hidden="true"><div id="mq"><span>Claude AI Training</span><span>AI Tools Training</span><span>Prompt Engineering</span><span>AI for Business</span><span>AI Content Creation</span><span>AI Resume &amp; Interview Preparation</span><span>AI Productivity</span><span>AI Automation</span><span>Generative AI</span><span>Practical AI Projects</span></div></div>
 
-<section class="syl" id="syllabus">
-  <div class="wrap">
-    <h2>6 hafte mein zero se real project tak</h2>
-    <p class="lead">Har hafte ek cheez seekhein, usi hafte use karke dekhein.</p>
-    <ol class="weeks">
-      <li><b>Hafta 1</b><span>AI aur Claude ki buniyaad, account setup, achha prompt likhna (Hindi aur English), AI ki limits.</span></li>
-      <li><b>Hafta 2</b><span>Padhai aur research: notes, summary, PDF se sawal poochna, resume aur interview prep.</span></li>
-      <li><b>Hafta 3</b><span>Roz ka kaam automate karna: email, reports, Excel help, documents aur presentation.</span></li>
-      <li><b>Hafta 4</b><span>Business use: content calendar, customer replies, Projects mein apna AI assistant.</span></li>
-      <li><b>Hafta 5</b><span>Artifacts se chhote tools aur calculators banana, Claude Code ka intro.</span></li>
-      <li><b>Hafta 6</b><span>Final project present karein aur academy ka certificate paayein.</span></li>
-    </ol>
+<section id="tracks"><div class="w">
+  <h2>Aap kaun hain? Course aapke hisaab se.</h2>
+  <p class="lead">Basics sabke liye ek hain. Phir aapka track alag ho jata hai. Apna chunein aur dekhein 6 hafte baad aap kya bana lenge.</p>
+  <div class="tabs" role="tablist" id="tabs">
+    <button role="tab" aria-selected="true" data-i="0">Student</button>
+    <button role="tab" aria-selected="false" data-i="1">Job karne wale</button>
+    <button role="tab" aria-selected="false" data-i="2">Business owner</button>
   </div>
-</section>
+  <div class="panel" id="pn" role="tabpanel"><div><h3 id="pt"></h3><p id="pp"></p></div><ul id="pl"></ul></div>
+</div></section>
 
-<section id="fees">
-  <div class="wrap">
-    <h2>Fees aur batch</h2>
-    <p class="lead">Sahi fees aur nayi batch ki date ke liye WhatsApp par poochein. Pehle demo class free hai.</p>
-    <div class="plans">
-      <div class="plan"><h3>Student batch</h3><div class="price">₹ ____</div><ul><li>6 hafte, weekend ya shaam</li><li>Notes aur practice tasks</li><li>Certificate</li></ul><a class="btn ghost" href="#demo">Fees poochein</a></div>
-      <div class="plan hot"><h3>Professional batch</h3><div class="price">₹ ____</div><ul><li>6 hafte, office ke baad</li><li>Email, Excel, reports par focus</li><li>Certificate</li></ul><a class="btn" href="#demo">Fees poochein</a></div>
-      <div class="plan"><h3>Business batch</h3><div class="price">₹ ____</div><ul><li>Apne business ka AI setup</li><li>Content aur customer replies</li><li>Staff workshop ka option</li></ul><a class="btn ghost" href="#demo">Fees poochein</a></div>
-    </div>
-  </div>
-</section>
+<section class="sy" id="syllabus"><div class="w">
+  <h2>6 hafte mein zero se real project tak</h2>
+  <p class="lead">Har hafte ek cheez seekhein, usi hafte use karke dekhein.</p>
+  <ol class="wk">
+    <li><b>Hafta 1</b><span>AI aur Claude ki buniyaad, account setup, achha prompt likhna (Hindi aur English), AI ki limits.</span></li>
+    <li><b>Hafta 2</b><span>Padhai aur research: notes, summary, PDF se sawal poochna, resume aur interview prep.</span></li>
+    <li><b>Hafta 3</b><span>Roz ka kaam automate karna: email, reports, Excel help, documents aur presentation.</span></li>
+    <li><b>Hafta 4</b><span>Business use: content calendar, customer replies, Projects mein apna AI assistant.</span></li>
+    <li><b>Hafta 5</b><span>Artifacts se chhote tools aur calculators banana, Claude Code ka intro.</span></li>
+    <li><b>Hafta 6</b><span>Final project present karein aur academy ka certificate paayein.</span></li>
+  </ol>
+</div></section>
 
-<section id="faq" style="padding-top:0">
-  <div class="wrap">
-    <h2>Aksar poochhe jaane wale sawal</h2>
-    <div class="faq">
-      <details><summary>Kya coding aani zaroori hai?</summary><p>Nahi. Course bilkul beginners ke liye hai. Aapko bas computer ya phone chalana aana chahiye.</p></details>
-      <details><summary>Classes kis bhasha mein hoti hain?</summary><p>Hindi aur English mix mein, jaise hum roz baat karte hain. Prompts aap Hindi mein bhi likhna seekhenge.</p></details>
-      <details><summary>Classes offline hain ya online?</summary><p>Jaipur mein offline batch aur online batch dono ke baare mein WhatsApp par poochein.</p></details>
-      <details><summary>Kya Claude free hai?</summary><p>Claude ka free plan hai, jisse aap course shuru kar sakte hain. Zyada use ke liye paid plan alag se Anthropic ki taraf se hota hai, uski fees course mein shamil nahi hai.</p></details>
-      <details><summary>Kya yeh Anthropic ka official course hai?</summary><p>Nahi. Yeh ek independent training academy hai. Claude Anthropic ka product hai.</p></details>
-    </div>
+<section id="services"><div class="w">
+  <h2>AI training mein hum kya sikhate hain</h2>
+  <p class="lead">Jhotwara, Jaipur mein in sabhi courses aur workshops ki training milti hai.</p>
+  <div class="sv">
+    <div><h3>Claude AI Training</h3><p>Claude ko shuru se seekhein: account, prompts, Projects aur Artifacts.</p></div>
+    <div><h3>AI Tools Training</h3><p>Claude ke saath doosre AI tools ka sahi aur safe use.</p></div>
+    <div><h3>Prompt Engineering Training</h3><p>Hindi aur English mein aise prompts jo pehli baar mein kaam ka jawab dein.</p></div>
+    <div><h3>AI for Business</h3><p>Customer replies, product descriptions, offers aur roz ka kaam AI se.</p></div>
+    <div><h3>AI Content Creation</h3><p>Social media posts, reel scripts, blogs aur captions tezi se banana.</p></div>
+    <div><h3>AI Resume &amp; Interview Preparation</h3><p>Resume, cover letter aur mock interview ki practice.</p></div>
+    <div><h3>AI Productivity Training</h3><p>Email, notes, meetings aur planning mein roz ka time bachayein.</p></div>
+    <div><h3>AI Automation Training</h3><p>Baar-baar hone wale kaam ko simple AI workflows se automatic karna.</p></div>
+    <div><h3>Generative AI Training</h3><p>Text, image aur document banane wale AI kaise kaam karte hain aur kab bharosa karein.</p></div>
+    <div><h3>Practical AI Project Training</h3><p>Course ke end mein apna real project banakar present karein.</p></div>
   </div>
-</section>
+</div></section>
 
-<section class="final" id="demo" style="background:var(--surface);border-top:1px solid var(--line)">
-  <div class="wrap">
-    <h2>Pehli class free. Aaj hi seat pakki karein.</h2>
-    <p class="lead" style="margin:14px auto 0">WhatsApp par “Demo” likhkar bhejein. Hum batch ka time aur jagah bata denge.</p>
-    <div class="cta">
-      <a class="btn" href="https://wa.me/91XXXXXXXXXX?text=Demo">WhatsApp par demo book karein</a>
-      <a class="btn ghost" href="tel:+91XXXXXXXXXX">Call karein</a>
-    </div>
+<section id="fees" style="padding-top:0"><div class="w">
+  <h2>Ek simple fees</h2>
+  <p class="lead">Poore 6 hafte ke course ki ek fees, koi chhupa charge nahi. Pehle demo class free hai, pasand aaye tabhi join karein.</p>
+  <div class="fee"><h3 style="font-size:24px;margin-bottom:14px">Complete AI Course, 6 hafte</h3>
+    <div class="p">₹9,999<small>poora course</small></div>
+    <ul><li>Claude AI, prompt engineering, AI for business, content, resume aur automation</li><li>Chhota batch, hands-on practice</li><li>Notes aur practice tasks</li><li>Final project aur certificate</li><li>WhatsApp par doubt support</li></ul>
+    <a class="btn" href="https://wa.me/916350566010?text=Demo">Demo class book karein</a></div>
+</div></section>
+
+<section id="faq" style="padding-top:0"><div class="w">
+  <h2>Aksar poochhe jaane wale sawal</h2>
+  <div class="faq">
+    <details><summary>Classes kahan hoti hain?</summary><p>58A Udyog Nagar, Jhotwara, Jaipur mein. Aane se pehle WhatsApp par batch ka time confirm kar lein.</p></details>
+    <details><summary>Kya coding aani zaroori hai?</summary><p>Nahi. Course bilkul beginners ke liye hai. Aapko bas computer ya phone chalana aana chahiye.</p></details>
+    <details><summary>Classes kis bhasha mein hoti hain?</summary><p>Hindi aur English mix mein, jaise hum roz baat karte hain. Prompts aap Hindi mein bhi likhna seekhenge.</p></details>
+    <details><summary>Kya Claude free hai?</summary><p>Claude ka free plan hai, jisse aap course shuru kar sakte hain. Zyada use ke liye paid plan alag se Anthropic ki taraf se hota hai, uski fees course mein shamil nahi hai.</p></details>
+    <details><summary>Kya yeh Anthropic ka official course hai?</summary><p>Nahi. Yeh ek independent training academy hai. Claude Anthropic ka product hai.</p></details>
   </div>
-</section>
+</div></section>
+
+<section class="end" id="demo"><div class="w">
+  <h2>Pehli class free. Aaj hi seat pakki karein.</h2>
+  <p class="lead">WhatsApp par “Demo” likhkar bhejein. Hum batch ka time bata denge.</p>
+  <div class="cta"><a class="btn" href="https://wa.me/916350566010?text=Demo">WhatsApp par demo book karein</a><a class="btn g" href="tel:+916350566010">Call: 6350566010</a><a class="btn g" href="https://maps.app.goo.gl/MphifyVcaZq6B96g8" rel="noopener">Google Maps par raasta</a></div>
+  <p class="addr"><b>Claude AI Training Jaipur</b><br>58A Udyog Nagar, Jhotwara, Jaipur, Rajasthan</p>
+</div></section>
 </main>
 
-<footer>
-  <div class="wrap">
-    <div><b>Claude AI Training Jaipur</b> · Jaipur, Rajasthan · [Aapka address]</div>
-    <div>Yeh ek independent training academy hai. Anthropic se koi sambandh ya partnership nahi hai. Claude Anthropic ka trademark hai.</div>
-  </div>
-</footer>
+<footer><div class="w"><div><b>Claude AI Training Jaipur</b> · 58A Udyog Nagar, Jhotwara, Jaipur · <a href="tel:+916350566010">6350566010</a> · <a href="https://maps.app.goo.gl/MphifyVcaZq6B96g8" rel="noopener">Google Maps</a></div>
+<div>Yeh ek independent training academy hai. Anthropic se koi sambandh ya partnership nahi hai. Claude Anthropic ka trademark hai.</div></div></footer>
+
+<div class="bar"><a class="btn" href="https://wa.me/916350566010?text=Demo">WhatsApp</a><a class="btn g" href="tel:+916350566010">Call</a></div>
 
 <script>
 (function(){
-  var q=document.getElementById('q'),a=document.getElementById('a'),at=document.getElementById('at');
-  var qt="Mere 12th ke result ke baad kaunse 3 career options dekhne chahiye? Hindi mein batao.";
-  var atx="Aap apne interest ke hisaab se in 3 raaston ko dekh sakte hain: 1) Commerce ke saath CA ya BBA, 2) Computer science ya data field, 3) Design ya media. Batayein aapko kya pasand hai, main aage guide karunga.";
-  if(matchMedia('(prefers-reduced-motion: reduce)').matches){q.textContent=qt;a.hidden=false;at.textContent=atx;return;}
-  function type(el,t,sp,done){var i=0;el.classList.add('caret');(function s(){el.firstChild&&0;el.textContent=t.slice(0,i++);if(i<=t.length){setTimeout(s,sp)}else{el.classList.remove('caret');done&&setTimeout(done,350)}})()}
-  type(q,qt,32,function(){a.hidden=false;type(at,atx,18)});
+var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+var mq=document.getElementById('mq');mq.innerHTML+=mq.innerHTML;
+
+var T=[
+{t:"Student",q:"Mere 12th ke result ke baad kaunse 3 career options dekhne chahiye? Hindi mein batao.",a:"Aap interest ke hisaab se dekh sakte hain: 1) Commerce ke saath CA ya BBA, 2) Computer science ya data, 3) Design ya media. Batayein aapko kya pasand hai, main aage guide karunga."},
+{t:"Job karne wale",q:"Manager ko project delay ka professional email likho, polite tone mein.",a:"Subject: Project timeline update. Namaste, vendor ki taraf se material 2 din late aaya, isliye final delivery Friday ki jagah Monday hogi. Aapki anumati chahiye. Dhanyavaad."},
+{t:"Business owner",q:"Meri mithai ki dukaan ke liye Diwali ke 5 Instagram post ideas do.",a:"1) Gift box ka reel, 2) Ghar par bani mithai ka behind-the-scenes, 3) Corporate gifting offer, 4) Customer ki photo wala post, 5) Last date wala countdown story."}
+];
+var q=document.getElementById('q'),a=document.getElementById('a'),at=document.getElementById('at'),tg=document.getElementById('tg'),k=0;
+function ty(el,s,sp,cb){var i=0;el.classList.add('cur');(function f(){el.textContent=s.slice(0,i++);if(i<=s.length)setTimeout(f,sp);else{el.classList.remove('cur');cb&&setTimeout(cb,400)}})()}
+function run(){var d=T[k%T.length];k++;tg.textContent=d.t;a.hidden=true;at.textContent='';q.textContent='';ty(q,d.q,30,function(){a.hidden=false;ty(at,d.a,14,function(){setTimeout(run,3200)})})}
+if(rm){var d=T[0];tg.textContent=d.t;q.textContent=d.q;a.hidden=false;at.textContent=d.a}else run();
+
+var P=[
+{h:"Padhai ko aasaan banayein",p:"Notes, summary aur doubt solving se lekar resume aur interview tak. Time bachayein, samajh badhayein.",l:["Kisi bhi chapter ka summary aur practice questions","PDF se seedha sawal poochna","Resume, cover letter aur mock interview","Final project: apna study planner"]},
+{h:"Office mein sabse tez banein",p:"Roz ke email, report aur presentation ka kaam aadhe time mein.",l:["Professional email aur report 5 minute mein","Excel formulas aur data ki madad","Meeting notes aur action list","Final project: apna kaam ka AI assistant"]},
+{h:"Business ko AI se badhayein",p:"Content, customer replies aur offers. Apne business ka khud ka AI assistant banayein.",l:["Instagram aur WhatsApp content calendar","Customer replies aur product descriptions","Offers aur festival campaigns","Final project: apne business ka AI setup"]}
+];
+var tb=document.getElementById('tabs').querySelectorAll('button');
+function show(i){tb.forEach(function(b,j){b.setAttribute('aria-selected',j==i)});var d=P[i];document.getElementById('pt').textContent=d.h;document.getElementById('pp').textContent=d.p;document.getElementById('pl').innerHTML=d.l.map(function(x){return'<li>'+x+'</li>'}).join('')}
+tb.forEach(function(b){b.addEventListener('click',function(){show(+b.dataset.i)})});show(0);
+
+var li=document.querySelectorAll('ol.wk li');
+if('IntersectionObserver' in window&&!rm){var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.6});li.forEach(function(x){io.observe(x)})}else li.forEach(function(x){x.classList.add('in')});
 })();
 </script>
 </body>
